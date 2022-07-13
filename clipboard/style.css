@@ -1,0 +1,49 @@
+body {
+    background:honeydew;
+}
+#h1{
+    position: relative;
+    text-align: center;
+}
+label {
+    left: 18vh;
+    position: relative;
+    top: -61vh;
+}
+#outerContainer {
+    position: relative;
+    top: 6vh;
+    left: 31vh;
+    width: 157vh;
+}
+#innercontainer1{
+    position: relative;
+    float: left;
+    top:80;
+}
+#innercontainer2{
+    position: relative;
+    float: right;
+    top: 80;
+}
+#txtBox1{
+    margin: 38px;
+    padding: 10px;
+    border-radius: 8px;
+}
+#txtBox2{
+    margin: 38px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#copyButton {
+    top: -32vh;
+    position: relative;
+    width: 12vh;
+    height: 5vh;
+    border-radius: 8px;
+    border-style: outset;
+    background-color:antiquewhite;
+    cursor: pointer;
+}
