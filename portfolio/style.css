@@ -1,0 +1,44 @@
+div.relative {
+    position: relative;
+    left: 35px;
+    width: 1250px;
+    height: 590px;
+    top: 10px;
+    border: 3px solid #73AD21;
+    overflow: hidden;
+    background-image: url(https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    background-size: 1300px 590px;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+    /*https://images.pexels.com/photos/5208871/pexels-photo-5208871.jpeg?auto=compress&cs=tinysrgb&w=600 
+    https://wallpaperaccess.com/full/5651986.jpg*/
+  }
+
+  div.relative1 {
+    position: relative;
+    left: 300px;
+    top: 150px;
+    width: 285px;
+    box-sizing: border-box;
+  }
+
+  div.image {
+    position: relative;
+    left: 750px;
+    top: -55px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    float: right
+  }
