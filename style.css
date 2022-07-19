@@ -1,0 +1,88 @@
+body {
+    background: rgb(37,34,86);
+    background: linear-gradient(90deg, rgba(37,34,86,1) 14%, rgba(14,31,207,1) 68%, rgba(105,28,164,1) 86%);
+    background-image: url('https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#outercontainer{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+}
+#innercontainer{
+    position: relative;
+    top:-35px;
+}
+h1, h5, h6{
+    color: rgb(255 99 25);
+}
+h4{
+    color: #8cfb20;
+}
+.about {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #fb81f6;
+    box-shadow: rgb(84 25 120 / 85%) 10px 10px 16px;
+}
+
+.projects-list {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    top: 2vh;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #fb81f6;
+    box-shadow: rgb(84 25 120 / 85%) 10px 10px 16px;
+}
+
+.project {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project:first-of-type {
+    padding-top: 4px;
+}
+
+.project-name {
+    text-align: left;
+}
+
+.btns {
+    position: relative;
+    float: right;
+    top: -6vh;
+}
+
+button {
+    width: 7vh;
+    height: 5vh;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color:#76ebd6;
+}
+i{
+    color: #e5e5e5;
+    font-size: 20px;
+}
+a {
+    width: 7vh;
+    height: 5vh;
+}
+
+i:hover {
+    color: #ff2929;
+}
+
+@media screen and (max-width:1000px) {
+    body,#outercontainer, #innercontainer {
+      width: 100%; 
+    }
+  }
