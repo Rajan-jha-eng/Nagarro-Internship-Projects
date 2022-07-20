@@ -1,0 +1,48 @@
+body{
+    background-image: url('https://images.pexels.com/photos/3608311/pexels-photo-3608311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#outercontainer{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    left: 420px;
+    top: 120px;
+    opacity: 0.7;
+}
+h4{
+    position: relative;
+    text-align: center;
+    top:5px;
+    color: #0000d9;
+}
+h6{
+    color: #790cdd;
+    font-size: 20px;
+}
+#innercontainer{
+    position: relative;
+    left:5px;
+}
+#inputGrs{
+    background-color: transparent;
+    border-radius: 7px;
+    color: #eb0404;
+    padding: 4px;
+}
+input::placeholder{
+    padding: 3px;
+    color: #08beb5;
+}
+#outputKgs{
+    color: #eb0404;
+}
+button{
+    background-color: #7cfcff;
+    font-size: 18px;
+    color: blue;
+    border-radius: 9px;
+    border-style: groove;
+    border-color: blue;
+}
