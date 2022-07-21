@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url('https://images.pexels.com/photos/4008141/pexels-photo-4008141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#calculator{
+    height: 90vh;
+    width: 100vw;
+    opacity: 1.3;
+   
+}
+#innercontainer{
+    position: relative;
+    left:30%;
+    top:25%;
+    width: 40%;
+    height: 65%;
+    border-style: groove;
+    border-width: 1%;
+}
+.screen{
+    position: absolute;
+    width: 85%;
+}
+h2{ 
+    position:absolute;
+    text-align: center; 
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    top: 10%;
+    left: 43%;
+}
+#upscreen{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-style: groove;
+    background: rgb(121 251 221);
+    color: rgb(204, 24, 0);
+    opacity: .9;
+}
+#lowscreen{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-style: groove;
+    margin-top: 0.3vw;
+}
+
+#grp1{
+    border-style: groove;
+    margin-top: 0.3vw;
+    margin-bottom: 0.3vw;
+    height: 23.5%;
+    padding-left: 0.3vw;
+}
+#grp2{
+    border-style: groove;
+    margin-bottom: 0.3vw;
+    height: 23.5%;
+    padding-left: 0.3vw;
+}
+#grp3{
+    border-style: groove;
+    margin-bottom: 0.3vw;
+    height: 23.5%;
+    padding-left: 0.3vw;
+}
+#grp4{
+    border-style: groove;
+    height: 23.5%;
+    padding-left: 0.3vw;
+}
+#btn1{
+    float: right;
+    width: 15%;
+    height: 100%;
+    background: rgb(255 0 0);
+    color: ghostwhite;
+}
+button{
+    width: 23.7%;
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 12%;
+    transition: width .1s;
+    opacity: .7;
+}
+button:hover{
+    width: 24.1%;
+    height: 100.1%;
+    opacity: 1.5;
+    
+}
+.operator{
+    background:rgb(239 66 106);
+    color: ghostwhite;
+}
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b0{
+    background: rgb(157 42 165 / 98%);
+    color: ghostwhite;
+}
+.eval, #dot{
+    background: rgb(49 197 0);
+    color: ghostwhite;
+}
+@media only screen and (max-width: 400px) {
+    #upscreen{
+        width:100%;
+        left: 0%;
+    }
+    #grp1,  #grp2, #grp3, #grp4{
+        width:100%;
+        left: 0%;
+        margin-bottom: 0.6vw;
+    }
+    h2{
+        left:31%;
+        top:5%;
+    }
+    #innercontainer{
+        width:100%;
+        left: 0%;
+        top:19%;
+    }
+    #lowscreen{
+        width: 100%;
+        height: 80%;
+    }
+    button{
+        width: 22%;
+    }
+}
