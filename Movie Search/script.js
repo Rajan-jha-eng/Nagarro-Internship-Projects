@@ -2,7 +2,7 @@ const input = document.getElementById("search");
 const searchButton = document.getElementById("search-addon");
 function movieInfo(){
     const movieName=input.value;
-    const url= `http://www.omdbapi.com/?t=${movieName}&apikey=8d1f96ce&s=`
+    const url= `https://www.omdbapi.com/?t=${movieName}&apikey=8d1f96ce&s=`
     fetch(url)
     .then(res=>res.json())
     .then(data=>{
