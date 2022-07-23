@@ -1,0 +1,97 @@
+body{
+    background-image: url('https://wallpaperaccess.com/full/2000051.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#outercontainer{
+    width:100vw;
+    height: 90vh;
+}
+#innercontainer{
+    position: relative;
+    left: 18%;
+    top: 28%;
+    width: 60%;
+    height: 70%;
+    text-align: center;
+    border-style: inset;
+    border-color: #5789e7;
+    border-radius: 1.2%;
+    transition: width .1s;
+}
+#innercontainer:hover{
+    width: 61%;
+    height: 71%;
+    box-shadow: 3px 3px #b1ecff;
+}
+h2{
+    color: #ff9595;
+    text-shadow: 2px 2px 4px #d99393;
+}
+#title{
+    float: left;
+}
+#searchscreen{
+    position: relative;
+    width: 98%;
+    margin-left: 0.6vw;
+}
+#search{
+    background: #f1fd30;
+    color: darkblue;
+    transition: width .1s;
+}
+#search:hover{
+    width: 3vw;
+    height: 6vh;
+}
+input::placeholder{
+    color: darkblue;
+}
+button{
+    background: rgba(224, 124, 2, 0.938);
+    color: rgb(3, 3, 204);
+    transition: width .1s;
+}
+button:hover{
+    width: 3vw;
+    height: 6vh;
+}
+#search-addon{
+    float: right;
+    border-radius: 17%;
+}
+#displaybox{
+    display: none;
+    border-style: groove;
+    width: 98%;
+    height: 64%;
+    margin-left: 0.6vw;
+    border-color: blueviolet;
+    padding-top: 0.8vh;
+}
+#errorheader{
+    color: red;
+}
+#movietitle{
+     color: #babafd;
+}
+#releasedyear{
+    color: rgb(247 247 247);
+}
+#genre{
+    color: violet;
+}
+#plot{
+    color: #50ffff;
+}
+
+@media only screen and (max-width: 400px) {
+    #innercontainer{
+        width: 90%;
+        height: 75%;
+        left: 5%;
+        top: 22%;
+    }
+    
+}
