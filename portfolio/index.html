@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/40a85485d4.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+</head>
+<!--For main frame-->
+
+<body>
+  <!--For inner frame-->
+  <div class="Section" id="homecontainer">
+    <!--for nav bar-->
+    <div class="div1" id="header">
+      <nav>
+        <ul id="ulist1">
+          <li class="navbar-li">
+            <a>
+              <button onclick="goTo('info')"><b> Home </b></button>
+    
+            </a>
+          </li>
+          <li class="navbar-li">
+            <a>
+              <button onclick="goTo('mainskill')"><b>Skills</b></button>
+            </a>
+          </li>
+          <li class="navbar-li">
+            <a>
+              <button onclick="goTo('educontainer')"><b> Education </b></button>
+    
+            </a>
+          </li>
+          <li class="navbar-li">
+            <a>
+              <button onclick="goTo('mainproject')"><b> Projects </b></button>
+    
+            </a>
+          </li>
+          <li class="navbar-li">
+            <a>
+              <button onclick="goTo('contacthead')"><b> Contact</b></button>
+    
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--For Home box-->
+    <div id="info" class="division">
+      <div class="relative1" id="about">
+        <h1>Hi, I'm <strong style="color:darkmagenta">Rajan Jha</strong></h1>
+        <div style="position: relative;
+        width: 38%;
+        margin-left: 30%">
+          <h3> <strong style="color:#e578e5">Web Developer</strong></h3>
+        </div>
+        
+        <br>
+        <button id="btn">About Me</button>
+        <div id="aboutme">
+          <p style="font-size: 17px;">High level experience in web design and development knowledge, producing quality
+            work.
+  
+          </p>
+        </div>
+      </div>
+      <!--for my image-->
+      <div id="image">
+        <img id="myimage" src="https://drive.google.com/uc?export=view&id=14CQ4MrETNj5XdCwbI_lhjWWBHDhaH6kc"
+          alt="random image">
+      </div>
+    </div>
+
+    <!--For Skill box-->
+    <div id="mainskill" class="division" style="display:none">
+      <div id="skillhead">
+        <h3>Technical Skills</h3>
+      </div>
+      <div id="techskill" style="display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          align-content: stretch;">
+        <div id="cplus" class="skills" >
+          <img class="skillimage" style="position: relative;width: 40%;height: 100%; " src="https://img.icons8.com/ios/2x/c-plus-plus-logo.png"
+            alt="C++">
+            <div class="middle">
+              <div class="text">C++</div>
+            </div>
+        </div>
+        <div id="python" class="skills" >
+          <img class="skillimage"style="position: relative;width: 40%;height: 100%; " src="https://img.icons8.com/wired/2x/python.png"
+            alt="Python">
+            <div class="middle">
+              <div class="text">Python</div>
+            </div>
+        </div>
+        <div id="html1"class="skills" >
+          <img class="skillimage" style="position: relative;width: 40%;height: 100%; "
+            src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/2x/external-html-programming-and-coding-flatart-icons-outline-flatarticons-2.png"
+            alt="HTML">
+            <div class="middle">
+              <div class="text">HTML</div>
+            </div>
+        </div>
+        <div id="css1"class="skills" >
+          <img class="skillimage"style="position: relative;width: 40%;height: 100%; " src="https://img.icons8.com/ios/344/css3.png" alt="CSS">
+          <div class="middle">
+            <div class="text">CSS</div>
+          </div>
+        </div>
+        <div id="jquery1"class="skills" >
+          <img class="skillimage"style="position: relative;width: 34%;height: 100%;margin-left: 3%; "
+            src="https://img.icons8.com/ios/2x/jquery.png" alt="JQuery">
+            <div class="middle">
+              <div class="text">JQuery</div>
+            </div>
+        </div>
+        <div id="javasript"class="skills" >
+          <img class="skillimage"style="position: relative;width: 34%;height: 100%;margin-left: 3%; "
+            src="https://img.icons8.com/ios/2x/java-coffee-cup-logo.png" alt="javasript">
+            <div class="middle">
+              <div class="text">Javasript</div>
+            </div>
+        </div>
+        <div id="sql"class="skills" >
+          <img class="skillimage"style="position: relative;width: 37%;height: 100%; "
+            src="https://img.icons8.com/external-outline-juicy-fish/2x/external-sql-coding-and-development-outline-outline-juicy-fish.png"
+            alt="SQL">
+            <div class="middle">
+              <div class="text">SQL</div>
+            </div>
+        </div>
+        <div id="dbms"class="skills" >
+          <img class="skillimage"style="position: relative;width: 40%;height: 100%; "
+            src="https://img.icons8.com/external-creatype-outline-colourcreatype/2x/external-dbm-file-extension-web-format-file-creatype-outline-colourcreatype.png"
+            alt="DBMS">
+            <div class="middle">
+              <div class="text">DBMS</div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--For education box-->
+    <div id="educontainer" class="division" style="display:none">
+      <h4 style="margin-bottom: 3%;
+      position: relative;">Education</h4>
+      <div style="position: relative;width: 94%;
+      height: 42%;
+      padding-left: 5%;">
+        <div id="college">
+          <h5>Bachelor's of Technology</h5>
+          <h4>Bharati Vidyapeeth's College of Engineering, Delhi</h4>
+          <h6>Electronics and Communications Engineering (ECE)</h6>
+          <h6>2019-2023</h6>
+          <h6>CGPA: 9.080 </h6>
+        </div>
+        <div id="hsc">
+          <h5>Intermediate</h5>
+          <h4>Govt. Boys Sr. Sec. School no.-2,Roop Nagar</h4>
+          <h6>2018</h6>
+          <h6>Percentage: 80%</h6>
+        </div>
+      </div>
+      <div id="ssc">
+        <h5>Class 10th</h5>
+        <h4>Mount Olivet Sr. Sec. School</h4>
+        <h6>2016</h6>
+        <h6>CGPA: 8.8</h6>
+      </div>
+    </div>
+
+    <!--for Project box-->
+    <div id="mainproject" class="division" style="display:none">
+      <h4 style="margin-bottom: 2%;
+      position: relative; text-align: center;">Projects</h4>
+      <div class="row1" style="position: relative;
+      width: 100%;
+      height: 42%;
+      margin-bottom: 2%;">
+        <div class="project" id="project1" style=" background-image: url('https://drive.google.com/uc?export=view&id=1P-vJ_WQjznd6Jefzyp2rf4JGsC-q2nVD');
+        background-repeat: no-repeat;
+          background-size: 100% 100%;">
+          <div class="textbox" id="textbox1">
+            <h5>Twitter Clone</h5>
+            <p style="font-size: 13px;">Designed the Front-End part of the Twitter Clone and Currently working on the Back-End part.</p>
+            <div class="icons">
+              <a href="https://rajan-jha-eng.github.io/Nagarro-Internship-Projects/Twitter%20Page/index.html" target="_blank"> <button><i class="fa-solid fa-link"></i></button></a>
+              <a href="https://github.com/Rajan-jha-eng/Nagarro-Internship-Projects/tree/main/Twitter%20Page" target="_blank">
+                <button><i class="fa-brands fa-github"> </i></button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="project" id="project2" style=" background-image: url('https://drive.google.com/uc?export=view&id=1bb6sUn_RtP0iPOzm8EdEuIoRh26t9Uxg');
+        background-repeat: no-repeat;
+          background-size: 100% 100%;">
+          <div class="textbox" id="textbox2">
+            <h5>MyMeal Website</h5>
+            <p style="font-size: 13px;">Designed a static food delivering website using plane HTML and
+              CSS.</p>
+            <div class="icons">
+                <a href="./Movie Search/index.html" target="_blank"> <button><i class="fa-solid fa-link"></i></button></a>
+                <a href="https://github.com/Rajan-jha-eng/Nagarro-Internship-Projects/tree/main/Movie%20Search" target="_blank">
+                  <button><i class="fa-brands fa-github"> </i></button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row1" style="position: relative;
+      width: 100%;
+      height: 42%;
+      padding-bottom: .51%">
+        <div class="project" id="project3" style=" background-image: url('https://drive.google.com/uc?export=view&id=1m_T9QTJWUzXzQPeDP-KulxuzZ6XJMrdc');
+                background-repeat: no-repeat;
+                  background-size: 100% 100%;">
+          <div class="textbox" id="textbox3">
+            <h5>Movie Finder</h5>
+            <p style="font-size: 13px;">Designed a website which gives description of searched movie using HTML, CSS, JQuery and
+              OMDb API.</p>
+            <div class="icons">
+              <a href="https://rajan-jha-eng.github.io/Nagarro-Internship-Projects/Movie%20Search/index.html" target="_blank"> <button><i class="fa-solid fa-link"></i></button></a>
+              <a href="https://github.com/Rajan-jha-eng/Nagarro-Internship-Projects/tree/main/Movie%20Search" target="_blank">
+                <button><i class="fa-brands fa-github"> </i></button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="project" id="project4" style=" background-image: url('https://drive.google.com/uc?export=view&id=1YZ8UtHrBhJrny5XCu6jvv07IYz65A9KW');
+        background-repeat: no-repeat;
+          background-size: 100% 100%;">
+          <div class="textbox" id="textbox4">
+            <h5>Live Cricket Score</h5>
+            <p style="font-size: 13px;"> Designed a website which gives live Cricket Score using HTML, CSS, JQuery and
+              CricAPI.</p>
+            <div class="icons">
+              <a href="https://rajan-jha-eng.github.io/Nagarro-Internship-Projects/Cricket_API/index.html" target="_blank"> <button><i class="fa-solid fa-link"></i></button></a>
+              <a href="https://github.com/Rajan-jha-eng/Nagarro-Internship-Projects/tree/main/Cricket_API" target="_blank">
+                <button><i class="fa-brands fa-github"> </i></button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--for contact box-->
+    <div id="contacthead" class="division" style="display:none">
+      <h3 style="margin-bottom: 5%">Contact</h3>
+      <div class="w3-section" id="contactinfo">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Delhi, India</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7982190717</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rajanjhsandelhi@gmail.com</p>
+      </div>
+      <div class="footer" id="icons">
+        <a href="https://www.linkedin.com/in/rajan-jha-2814a3196/" target="_blank" id="a1"><button id="btn2"> <img
+              id="icon1"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/72px-LinkedIn_icon_circle.svg.png?20210301220643"
+              alt=""></button></a>
+        <a href="https://github.com/Rajan-jha-eng" target="_blank" id="a2"><button id="btn3"><img id="icon2"
+              src="https://icones.pro/wp-content/uploads/2021/06/symbole-github-violet.png" alt=""></button></a>
+      </div>
+    </div>
+  </div>
+  </script>
+  <script>
+    function goTo(sectionName) {
+      var i;
+      var x = document.getElementsByClassName("division");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(sectionName).style.display = "block";  
+    }
+    
+    </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
