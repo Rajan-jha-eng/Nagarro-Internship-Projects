@@ -34,6 +34,8 @@ h4{
 .projects-list {
     position: relative;
     width: 40%;
+    heigth:60%;
+    overflow: auto;
     left: 30%;
     top: 2vh;
     border-style: groove;
@@ -41,6 +43,17 @@ h4{
     border-color: #fb81f6;
     box-shadow: rgb(84 25 120 / 85%) 10px 10px 16px;
 }
+::-webkit-scrollbar {
+    // Width of vertical scroll bar
+    width: 8px;
+    // Height of horizontal scroll bar
+    height: 10px;
+
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c2c9d2;
+  }
 
 .project {
     padding-left: 10px;
