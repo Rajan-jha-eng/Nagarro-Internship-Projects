@@ -1,4 +1,4 @@
-require('dotenv').config({ path: "C:\\Users\\admin\\Desktop\\twitter\\twitterclonemain\\config\\.env"});
+require('dotenv').config({ path: "env"});
 
 const sql = require('mysql2');
 
