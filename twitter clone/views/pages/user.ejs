@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/userStyle.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title> Tweets </title>
+</head>
+<body>
+
+    <div class="profileslide" id="myprofile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="profilepic">
+            <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNy1hZXctMTExXzMuanBn.jpg" alt="">
+        </div>
+        <span class="profilename">
+            <div id="firstname">Rajan</div>
+            <div id="lastname">Jha</div>
+        </span>
+        <span class="username">
+            @<div id="dispalyusername">rajan123</div>
+        </span>
+        <div class="emailid">rajanjhasndelhi@gmail.com</div>
+        <br>
+        <a href="/signout"><button class="logout" > log out </button></a>
+    </div>  
+
+    <div class="sidebar" id="sidebar1">
+        <i class="fa fa-twitter-square"></i>
+
+
+        <div class="sidebarOption active">
+            <span class="material-icons"> home </span>
+            <h2> Home </h2>
+        </div>
+        <div class="sidebarOption" onclick="openNav()">
+            <span class="material-icons" style="font-size: 17px;
+            cursor: pointer;
+            padding-left: 23px" >&#9776;</span>
+            <h2>Profile</h2>
+        </div>
+        
+        <div class="sidebarOption">
+            <span class="material-icons"> search </span>
+            <h2> Explore </h2>
+        </div>
+        <div class="sidebarOption">
+            <span class="material-icons"> notifications_none </span>
+            <h2> Notifications </h2>
+        </div>
+    </div>
+    
+
+    <div class="feed" id="feed1">
+        <div class="feed_header">
+            <h2> Home </h2>
+        </div>
+
+        <div class="tweetBox">
+            <form id="makeTweet">
+                <div class="tweetbox_input">
+                    <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNy1hZXctMTExXzMuanBn.jpg" alt="">
+                    <input id="tweet" type="text" placeholder="What's Happening?">
+                </div>
+                <button  type="submit" class="tweetbox_tweetbutton" >Tweet</button>
+            </form>
+        </div>
+
+        <div id="posts">
+
+            <% if(tweets.length > 0) { %>
+                <% for (var i = tweets.length - 1; i >= 0; --i) { %>
+                    <div class="post">
+                        <div class="post_avatar">
+                            <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNy1hZXctMTExXzMuanBn.jpg" alt="">
+                        </div>
+            
+                        <div class="post_body">
+                            <div class="post_header">
+                                <div class="post_headerTest">
+                                    <h3>
+                                        <%= tweets[i].firstname %> <%= tweets[i].lastname %>
+                                        <span class="post_headerSpecial">
+                                            @<%= tweets[i].username %>
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="post_headerDescription">
+                                    <p> <%= tweets[i].tweets %> </p>
+                                </div>
+                            </div>
+            
+                            <div class="post_footer">
+                                <span class="material-icons"> repeat </span>
+                                <span class="material-icons"> favorite_border </span>
+                                <span class="material-icons"> share </span>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+
+        </div>
+    </div>
+
+
+    <script src="js/tweetRequest.js"></script>
+</body>
+</html>
